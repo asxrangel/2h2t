@@ -22,6 +22,11 @@ ul{
 .logo {
     display: inline-block;
 }
+#logo{
+    height: 16vh;
+    width: 10vw;
+}
+
 .nav{
     width: 100vw;
     height: 100vw;
@@ -29,11 +34,48 @@ ul{
     background-color: var(--cor-fundo);
     overflow: hidden;
 }
-.menu {
+.menu a {
+    display: block;
+    padding: 30px;
+    color: var(--cor-fonte);
+}
+.menu a:hover{
+    background-color: var(--cor-hover);
+}
+.nav {
+    max-height: 0;
+    transition: max-height   .5s ease-out; 
+}
+.hamb {
+    cursor: pointer;
+    float: right;
+    padding: 35px 20px;
+}
+.hamb-line{
+    background-color: var(--cor-fonte);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+.hamb-ling::before,
+.hamb-ling::after{
+    background-color: var(--cor-fonte);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transform: all  .2s ease-out;
     width: 100%;
-    height: 50px;
-    background-color: rgb(122, 31, 31);
-    color:#fff;
+}
+.hamb-line::before{
+    top:5px;
+}
+.hamb-line::after{
+    top:-5px;
+}
+.side-menu{
+    display: none;
 }
 .rodape{
     width: 100%;
