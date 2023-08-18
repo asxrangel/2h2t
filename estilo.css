@@ -3,9 +3,9 @@
     padding: 0;
 }
 :root {
-   --cor-fundo:rgb(128, 38, 38);
+   --cor-fundo:rgb(117, 34, 34);
    --cor-fonte: rgb(255, 253, 253);
-   --cor-hover: rgb(71, 112, 165);
+   --cor-hover: rgb(170, 63, 63);
 }
 a {
  text-decoration-color: rgb(145, 98, 138);
@@ -23,8 +23,8 @@ ul{
     display: inline-block;
 }
 #logo{
-    height: 16vh;
-    width: 10vw;
+    height: 10vh;
+    width: 13vw;
 }
 
 .nav{
@@ -94,6 +94,14 @@ ul{
 }
 .rodape{
     text-align: center;
+}
+
+div[class^="item-"]{
+    background-color: rgb(177, 67, 76);
+    padding: 2px;
+    width: calc(100vw - 4px);
+    height: 50vh;
+    margin: 2px;
 }
 @media screen and (min-width: 820px){
   .nav{
